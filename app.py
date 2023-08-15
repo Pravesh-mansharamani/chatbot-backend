@@ -5,7 +5,7 @@ from werkzeug.utils import secure_filename
 from main import query_answer
 from textloader import process_all_files_in_uploader
 
-app = Flask(__name__, template_folder='../templates', static_folder='../static')
+app = Flask(__name__, template_folder='./templates', static_folder='./static')
 UPLOAD_FOLDER = 'uploader'
 ALLOWED_EXTENSIONS = {'pdf'}
 
