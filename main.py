@@ -2,7 +2,7 @@ import os
 from flask import Flask, jsonify, render_template, request
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
-from main import query_answer
+from qna import query_answer
 from textloader import process_all_files_in_uploader
 
 app = Flask(__name__, template_folder='./templates', static_folder='./static')
