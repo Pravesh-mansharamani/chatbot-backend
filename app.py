@@ -10,7 +10,7 @@ UPLOAD_FOLDER = 'uploader'
 ALLOWED_EXTENSIONS = {'pdf'}
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:3000"}})  # Allow requests from your React app's origin
+CORS(app)  # Allow requests from your React app's origin
 
 # Keep track of the uploaded files
 uploaded_files = []
@@ -73,4 +73,4 @@ def upload_file():
 
 
 if __name__ == '__main__':
-    app.run(port=8000)
+    app.run()
